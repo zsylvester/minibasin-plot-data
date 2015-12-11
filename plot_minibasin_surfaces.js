@@ -100,7 +100,7 @@ function plot_all(csv_file, olx, oly, bg_dS, dT, plotname, xrange, yrange) {
                     showgrid: true                  
                 },
                 margin: {                               // update the left, bottom, right, top margin
-                    l: 60, b: 40, r: 10, t: 40
+                    l: 60, b: 60, r: 30, t: 40
                 }
         };
         Plotly.plot(document.getElementById(plotname), data, layout, {showLink: false});
