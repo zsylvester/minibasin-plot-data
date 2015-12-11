@@ -118,7 +118,7 @@ var oly = [-450.23260814, -450.23260814, -360.19366811, -360.19366811,
             -231.51603732, -231.51603732, -201.57860922, -201.57860922,
             -177.39711363, -177.39711363, -158.48935052, -158.48935052,
             -140.00937789, -140.00937789, -126.26699213, -126.26699213];
-plot_all('/Users/zoltan/Documents/Python/onlap.csv',olx,oly,bg_dS,dT,
+plot_all('https://github.com/zsylvester/minibasin-plot-data/blob/master/data/onlap.csv',olx,oly,bg_dS,dT,
           'onlap',[0, 10000],[-800, 100]);
 
 // CONVERGENCE
@@ -139,7 +139,7 @@ var oly = [-127.37252165, -127.37252165, -122.37252165, -122.37252165,
           -57.37252165,  -57.37252165,  -52.37252165,  -52.37252165,
           -47.37252165,  -47.37252165,  -42.37252165,  -42.37252165,
           -37.37252165,  -37.37252165];
-plot_all('/Users/zoltan/Documents/Python/convergence.csv',olx,oly,bg_dS,dT,
+plot_all('https://github.com/zsylvester/minibasin-plot-data/blob/master/data/convergence.csv',olx,oly,bg_dS,dT,
           'convergence',[0, 10000],[-800, 100]);
 
 // VARIABLE SEDIMENT INPUT, CONSTANT SUBSIDENCE
@@ -180,7 +180,7 @@ var oly = [-605.1787365 , -605.1787365 , -501.8524781 , -501.8524781 ,
           -33.4120248 ,  -33.4120248 ,  -32.57405531,  -32.57405531,
           -36.79133554,  -36.79133554,  -40.4377226 ,  -40.4377226 ,
           -41.85415522,  -41.85415522];
-plot_all('/Users/zoltan/Documents/Python/var_sediment_const_subsid.csv',olx,oly,bg_dS,dT,
+plot_all('https://github.com/zsylvester/minibasin-plot-data/blob/master/data/var_sediment_const_subsid.csv',olx,oly,bg_dS,dT,
           'variable sediment input, constant subsidence'),[0, 10000],[-800, 100];
 
 // VARIABLE SEDIMENT INPUT, CONSTANT SUBSIDENCE, BYPASS
@@ -209,7 +209,7 @@ var oly = [-553.44006337, -553.44006337, -411.19366811, -411.19366811,
           11.24466123,   11.24466123,   31.51338355,   31.51338355,
           46.84820476,   46.84820476,   57.08520287,   57.08520287,
           52.51491885,   52.51491885,   50.16427429,   50.16427429];
-plot_all('/Users/zoltan/Documents/Python/var_sediment_const_subsid_bypass.csv',olx,oly,bg_dS,dT,
+plot_all('https://github.com/zsylvester/minibasin-plot-data/blob/master/data/var_sediment_const_subsid_bypass.csv',olx,oly,bg_dS,dT,
           'variable sediment input, constant subsidence, bypass',[0, 10000],[-800, 100]);
 
 // BRAZOS-TRINITY BASIN 4
@@ -235,7 +235,7 @@ var oly = [-260.94666667, -260.94666667, -247.23666667, -247.23666667,
           -167.06666667, -167.06666667, -140.25      , -140.25      ,
           -116.84666667, -116.84666667,  -94.95      ,  -94.95      ,
           -78.46666667,  -78.46666667];
-plot_all('/Users/zoltan/Documents/Python/magellan.csv',olx,oly,bg_dS,dT,
+plot_all('https://github.com/zsylvester/minibasin-plot-data/blob/master/data/magellan.csv',olx,oly,bg_dS,dT,
           'Brazos-Trinity Basin 4',[0, 15000],[-320, 20]);
 
 // AUGER BASIN
@@ -325,7 +325,7 @@ var oly = [-2857.09127703, -2857.09127703, -2390.78230993, -2390.78230993,
           -7.20033112,    -7.20033112,    21.83754984,    21.83754984,
           42.77431749,    42.77431749,    53.04102176,    53.04102176,
           50.18119015,    50.18119015,    61.32667884,    61.32667884];    
-plot_all('/Users/zoltan/Documents/Python/auger.csv',olx,oly,bg_dS,dT,
+plot_all('https://github.com/zsylvester/minibasin-plot-data/blob/master/data/auger.csv',olx,oly,bg_dS,dT,
           'Auger Basin',[0, 25000],[-3600, 200]);
 
 // CONSTANT SEDIMENT INPUT, VARIABLE SUBSIDENCE
@@ -348,7 +348,7 @@ var oly = [-204.52797534, -204.52797534, -168.80955742, -168.80955742,
           -37.04972398,  -37.04972398,  -11.78109204,  -11.78109204,
           5.95259829,    5.95259829,   19.04060582,   19.04060582,
           17.24010527,   17.24010527,   14.21647551,   14.21647551];
-plot_all('/Users/zoltan/Documents/Python/const_sediment_var_subsidence.csv',
+plot_all('https://github.com/zsylvester/minibasin-plot-data/blob/master/data/const_sediment_var_subsidence.csv',
           olx,oly,bg_dS,dT,'constant sediment input, variable subsidence',[0, 10000],[-800, 100]);
 
 // VARIABLE SEDIMENT INPUT, VARIABLE SUBSIDENCE
@@ -388,7 +388,7 @@ var oly = [-642.7245727 , -642.7245727 , -562.12970149, -562.12970149,
           -23.89676945,  -23.89676945,  -27.3279105 ,  -27.3279105 ,
           -41.36128455,  -41.36128455,  -50.94084508,  -50.94084508,
           -54.47255544,  -54.47255544];
-plot_all('/Users/zoltan/Documents/Python/var_sediment_var_subsidence.csv',olx,oly,bg_dS,dT,
+plot_all('https://github.com/zsylvester/minibasin-plot-data/blob/master/data/var_sediment_var_subsidence.csv',olx,oly,bg_dS,dT,
           'variable sediment input, variable subsidence',[0, 10000],[-800, 100]);
 
 // STATIC FILL AND SPILL
@@ -410,7 +410,7 @@ var oly = [-488.23260814, -488.23260814, -390.43140807, -390.43140807,
           -337.25514354, -337.25514354, -283.44748356, -283.44748356,
           -233.57846358, -233.57846358, -192.52797534, -192.52797534,
           -159.30955742, -159.30955742, -126.11043621, -126.11043621];
-plot_all('/Users/zoltan/Documents/Python/static_fill_and_spill.csv',olx,oly,bg_dS,dT,
+plot_all('https://github.com/zsylvester/minibasin-plot-data/blob/master/data/static_fill_and_spill.csv',olx,oly,bg_dS,dT,
           'static fill and spill',[0, 24000],[-800, 100]);
 
 // DYNAMIC FILL AND SPILL
@@ -432,5 +432,5 @@ var oly = [-209.26699213, -209.26699213,  -78.22759001,  -78.22759001,
           -115.89891362, -115.89891362, -200.76040815, -200.76040815,
           -147.8342503 , -147.8342503 , -115.71097894, -115.71097894,
           -91.89891362,  -91.89891362];
-plot_all('/Users/zoltan/Documents/Python/dynamic_fill_and_spill.csv',olx,oly,bg_dS,dT,
+plot_all('https://github.com/zsylvester/minibasin-plot-data/blob/master/data/dynamic_fill_and_spill.csv',olx,oly,bg_dS,dT,
           'dynamic fill and spill',[0, 24000],[-800, 100]);
