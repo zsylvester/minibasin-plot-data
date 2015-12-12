@@ -410,7 +410,7 @@ var oly = [-399.19366811, -399.19366811, -304.16801866, -304.16801866,
         -85.91870751,  -85.91870751,  -74.87849952,  -74.87849952,
         -63.43275706,  -63.43275706];
 plot_all('https://raw.githubusercontent.com/zsylvester/minibasin-plot-data/master/data/on_off_sediment_input.csv',olx,oly,bg_dS,dT,
-          'variable sediment input, variable subsidence',[0, 10000],[-800, 100]);
+          'on-off sediment input',[0, 10000],[-800, 100]);
 
 // STATIC FILL AND SPILL
 var bg_dS = 0.00015
