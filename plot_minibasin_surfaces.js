@@ -1,63 +1,3 @@
-function plot_surfs(ncolumns, rows, data, bg_dS, dT) {
-    var trace = {                           // first trace with no fill
-        type: 'scatter',                    // set the chart type
-        mode: 'lines',                      // connect points with lines
-        showlegend: false,                  // don't show legend
-        hoverinfo: 'none',                  // no hover text
-        x: rows.map(function (row) {          // set the x-data
-            return row['x'];
-        }),
-        y: rows.map(function (row) {          // set the y-data
-            return row['y1'];                 // y1 is the first column with y data
-        }),
-        line: {                             // set line properties
-            width: 0.5,
-            color: 'rgb(0,0,0)'
-        }
-    };
-    data.push(trace);                        // add trace to 'data' array
-    for (i = 2; i < ncolumns; i++) {          // rest of the traces, with area fills
-        var trace = {
-            type: 'scatter',                    // set the chart type
-            mode: 'lines',                      // connect points with lines
-            showlegend: false,
-            hoverinfo: 'none',
-            fill: 'tonexty',
-            fillcolor: 'rgb(256,256,182)',      // yellow color for layer fill
-            x: rows.map(function (row) {          // set the x-data
-                return row['x'];
-            }),
-            y: rows.map(function (row) {          // set the y-data
-                return row['y' + i.toString()] -
-                    bg_dS * dT;                         // top of sandy layer
-            }),
-            line: {                             
-                width: 0.5,
-                color: 'rgb(0,0,0)'
-            }
-        };
-        data.push(trace);
-        var trace = {
-            type: 'scatter',                    // set the chart type
-            mode: 'lines',                      // connect points with lines
-            showlegend: false,
-            hoverinfo: 'none',
-            fill: 'tonexty',
-            fillcolor: 'rgb(185,105,2)',        // brown color for layer fill
-            x: rows.map(function (row) {          // set the x-data
-                return row['x'];
-            }),
-            y: rows.map(function (row) {          // set the y-data
-                return row['y' + i.toString()];     // top of muddy (background) layer
-            }),
-            line: {                             
-                width: 1,
-                color: 'rgb(0,0,0)'
-            }
-        };
-        data.push(trace);
-    }
-}
 function plot_all(csv_file, olx, oly, bg_dS, dT, plotname, xrange, yrange) {
     Plotly.d3.csv(csv_file, function (rows) {
         // get number of columns in CSV file:
@@ -68,27 +8,25 @@ function plot_all(csv_file, olx, oly, bg_dS, dT, plotname, xrange, yrange) {
         for (x in dummy_x[0]) {
                 ncolumns++;
         }
-        var data = [];                            // array for storing trace data
-        //plot_surfs(ncolumns, rows, data, bg_dS, dT);  // plot surfaces (see function above)
-        
+        var data = [];                          // array for storing trace data        
         var trace = {                           // first trace with no fill
             type: 'scatter',                    // set the chart type
             mode: 'lines',                      // connect points with lines
             showlegend: false,                  // don't show legend
             hoverinfo: 'none',                  // no hover text
-            x: rows.map(function (row) {          // set the x-data
+            x: rows.map(function (row) {        // set the x-data
                 return row['x'];
             }),
-            y: rows.map(function (row) {          // set the y-data
-                return row['y1'];                 // y1 is the first column with y data
+            y: rows.map(function (row) {        // set the y-data
+                return row['y1'];               // y1 is the first column with y data
             }),
             line: {                             // set line properties
             width: 0.5,
             color: 'rgb(0,0,0)'
             }
         };
-        data.push(trace);                        // add trace to 'data' array
-        for (i = 2; i < ncolumns; i++) {          // rest of the traces, with area fills
+        data.push(trace);                       // add trace to 'data' array
+        for (i = 2; i < ncolumns; i++) {        // rest of the traces, with area fills
             var trace = {
                 type: 'scatter',                    // set the chart type
                 mode: 'lines',                      // connect points with lines
@@ -131,7 +69,7 @@ function plot_all(csv_file, olx, oly, bg_dS, dT, plotname, xrange, yrange) {
         }
         
         // plot onlap points:
-        var olpoints = {                          // first trace with no fill
+        var olpoints = {                            // first trace with no fill
             type: 'scatter',                        // set the chart type
             mode: 'markers',                        // connect points with lines
             showlegend: false,
