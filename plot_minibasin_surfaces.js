@@ -451,5 +451,5 @@ var oly = [-209.26699213, -209.26699213,  -78.22759001,  -78.22759001,
           -115.89891362, -115.89891362, -200.76040815, -200.76040815,
           -147.8342503 , -147.8342503 , -115.71097894, -115.71097894,
           -91.89891362,  -91.89891362];
-plot_all('https://raw.githubusercontent.com/zsylvester/minibasin-plot-data/master/data/dynamic_fill_and_spill.csv',olx,oly,bg_dS,dT,
+plot_all('https://cdn.rawgit.com/zsylvester/minibasin-plot-data/master/data/dynamic_fill_and_spill.csv',olx,oly,bg_dS,dT,
           'dynamic fill and spill',[0, 24000],[-800, 100]);
